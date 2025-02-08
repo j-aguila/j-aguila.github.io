@@ -1,15 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Webpage (Under Construction)</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Aguila - Academic Personal Website Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .video, .image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .cv-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cv-link:hover {
+            text-decoration: underline;
+        }
+        .projects, .publications, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Webpage (Under Construction)</h1>
-    <p>This is where I will showcase my work and interests.</p>
-    <img src="image.jpg" alt="Description of the image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gjQfcm5yEig?si=nlFb5zaPcd7aSDtF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <a href="Resume_DATASciAI-4.pdf" download>Download My CV</a>
+    <header>
+        <h1>Jose Aguila - Researcher and Scientist</h1>
+        <p>Exploring Computational Fluid Dynamics, Scientific Machine Learning, and Naval Engineering</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome! I am Jose Aguila, an aerospace and ocean engineer specializing in using Scientific Machine Learning to solve engineering challenges in fluid dynamics and structural analysis.</p>
+        </section>
+        <section id="research">
+            <h2>Research Highlights</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gjQfcm5yEig?si=nlFb5zaPcd7aSDtF" 
+                title="Research Video" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>My work focuses on boundary layer control, non-linear ship motions, and integrating physics-informed machine learning into practical engineering applications.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>Boundary Layer Control</h3>
+                    <p>Developed novel control techniques for improving fluid flow over marine vessels.</p>
+                </div>
+                <div class="card">
+                    <h3>Physics-Informed Machine Learning</h3>
+                    <p>Integrated physical laws with ML models to predict complex aerospace phenomena.</p>
+                </div>
+                <div class="card">
+                    <h3>Offshore Platform Dynamics</h3>
+                    <p>Analyzed hydroelasticity and seakeeping of offshore structures under extreme conditions.</p>
+                </div>
+            </div>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="publications">
+                <div class="card">
+                    <h3>Journal Article 1</h3>
+                    <p>Details about the article. <a href="#" class="cv-link">Read more</a></p>
+                </div>
+                <div class="card">
+                    <h3>Conference Paper 1</h3>
+                    <p>Details about the paper. <a href="#" class="cv-link">Read more</a></p>
+                </div>
+                <div class="card">
+                    <h3>Book Chapter 1</h3>
+                    <p>Details about the chapter. <a href="#" class="cv-link">Read more</a></p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:jaguila@vt.edu" class="cv-link">jaguila@vt.edu</a></p>
+            <p>Download my CV: <a href="Resume_DATASciAI-4.pdf" download class="cv-link">Click here</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Jose Aguila. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
