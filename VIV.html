@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Induced Vibrations - Project</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back">&larr; Back to Main Page</a>
+        <h1>Predicting Vortex Induced Vibrations of Steel Catenary Risers</h1>
+        <p> Vortex-Induced Vibrations (VIV) is a fluid-structure interaction phenomenon that occurs when an object is placed within a fluid flow. 
+          This is a common occurrence in marine environments, where structures such as risers, pipelines, and offshore structures are subjected to ocean currents.</p>
+
+        <p> When the vortex shedding frequency matches the natural frequency of the object, a resonance condition occurs, which can lead to substantial vibration amplitudes. 
+        The vibrations can occur in the cross-flow and/or in-line direction with respect to the incoming flow. VIV can cause fatigue damage and lead to failure in marine 
+        structures and needs to be properly understood and mitigated in the design and operation of offshore systems.</p>
+
+        <p> I have been involved in an extensive efford reconstructing motions of risers and extracting hydrodynamic databases to predict VIV in unseen flow conditions. 
+          The reconstruction of marine riser motions from accelerometer and strain sensor data entails a blend of data collection, processing, and physical modeling. 
+          Initially, accelerometers and strain sensors are deployed to capture acceleration and deformation data respectively, across the riser's structure. Following data collection, 
+          noise filtering and calibration are essential to ensure accuracy. The accelerometer data is double integrated to derive displacement, while strain data is converted to 
+          displacement using material properties and geometric relations, possibly involving finite element analysis for accurate interpretation. A computational riser model is then 
+          constructed and compared with the reconstructed motion from sensor data for validation. The process often involves sensor fusion to merge data from multiple sensors for a 
+          holistic understanding of riser behavior, which upon analysis, aids in assessing the impact on the marine structure’s safety, functionality, and longevity. This complex process, 
+          coupling data analytics with physical modeling, is critical for mitigating risks associated with vortex-induced vibrations and other marine environmental challenges.</p>
+
+        <p> Animations fo the reconstructions I have performed in straight and steel catenary risers are linked bellow: </p>
+        <div class="video">
+                <iframe width="777" height="437" 
+                    src="https://www.youtube.com/embed/fShueeyhZXQ?si=OW7i0j9hY-R369El" 
+                    title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        
+         <!-- <p>Read more in my <a href="https://github.com/jaguila-boundary-layer" target="_blank">GitHub Repository</a>.</p> -->
+    </div>
+</body>
+</html>
